@@ -13,6 +13,7 @@ on:
           - Sonoma v14.8.9
           - Ventura v13.7.8
           - Monterey v12.7.6
+          - Tahoe v26.5.2
       file:
         type: choice
         description: "File Type"
