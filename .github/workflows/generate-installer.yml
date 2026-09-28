@@ -19,8 +19,6 @@ on:
         required: true
         options:
           - ISO
-          - DMG
-          - ZIP
 
 run-name: Generate macOS Installer - ${{ github.event.inputs.macos_version }} ${{ github.event.inputs.file }}
 
@@ -32,7 +30,7 @@ env:
 jobs:
   build:
     runs-on: macos-latest
-    if: github.repository == 'Comp-Labs/Download-macOS'
+    if: github.repository == 'Ninibus/Download-macOS'
     steps:
       - uses: actions/checkout@v4
       
